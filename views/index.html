@@ -1,10 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+        <title>Hypothetical Burgers</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
-        <h1>Hello World!!!</h1>
-        <a href="/map" target="_blank">Open map in new window</a>.
+        <main>
+            <h1>Welcome to BurgerHeaven Online</h1>
+        </main>
+        <section id="selection">
+            <h3>Select burger</h3>
+            <p>This is where you execute burger selection</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>The Fire Burger</th>
+                        <th>Fried Turkey Burger</th>
+                        <th>A Double w/ Cheese</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://www.colourbox.com/preview/4409422-hamburger-with-fire.jpg" width="300"></td>
+                        <td><img src="https://cdn0.wideopeneats.com/wp-content/uploads/2017/10/arbys-deep-fried-turkey-sandwiches.png" width="300"></td>
+                        <td><img src="https://www.mcdonalds.com.my/storage/foods/September2017/thumb2doublecheeseburger-efc3a63a9d.jpg" width="300"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>750 kCal</li>
+                                <li>Contains lactose</li>
+                                <li>Contains gluten</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>600 kCal</li>
+                                <li>Contains lactose</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>1800 kCal</li>
+                                <li>Contains lactose</li>
+                                <li>Contains gluten</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h3>Customer information</h3>
+            <p>This is where you provide necessary information</p>
+            <h4>Delivery information</h4>
+            <form>
+                <p>
+                    <label for="fullname">Full name</label><br>
+                    <input type="text" id="fullname" name="fn" required="required" placeholder="First- and last name">
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street name">
+                </p>
+                <p>
+                    <label for="housenr">House</label><br>
+                    <input type="number" id="housenr" name="hs" required="required" placeholder="House number">
+                </p>
+                <p>
+                    <label for="recipient">Payment options</label><br>
+                    <select id="recipient" name="rcp">
+                        <option>Credit card</option>
+                        <option>PayPal</option>
+                        <option>Bitcoin</option>
+                        <option>Paysafecard</option>
+                    </select>
+                </p>
+                <p>Gender</p>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="non-binary" name="gender" value="non-binary">
+                    <label for="non-binary">Non-binary</label>
+                </div>
+                <div>
+                    <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked>
+                    <label for="undisclosed">Undisclosed</label>
+                </div>
+            </form>
+            <br><button type="submit"><img src="./static/1md034/img/html/image_button.png"> Send Info</button>
+        </section>
+        <footer>
+            <hr>
+            <p>&copy; Hypothetical Burgers Inc.</p>
+        </footer>
     </body>
 </html>
