@@ -1,0 +1,84 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+body {
+    font-family: dosis, arial;
+    font-size: em;
+}
+
+.header {
+    margin: 20px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.header h1 {
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 35%;
+    font-family: pacifico;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+}
+
+.selection {
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    background: black;
+    border: dotted;
+    border-width: 2px;
+}
+
+.contact {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: dashed;
+    border-width: 2px;
+}
+
+#lactose {
+    font-weight: bold;
+}
+
+#gluten {
+    font-weight: bold;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.wrapper {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 400px 400px 400px;
+     background-color: black;
+ }
+
+.a {
+     grid-column: 1;
+     grid-row: 2;
+ }
+
+.b {
+     grid-column: 2;
+     grid-row: 2;
+ }
+
+.c {
+    grid-column: 3;
+    grid-row: 2;
+}
