@@ -42,6 +42,10 @@ body {
     border-width: 2px;
 }
 
+.button {
+    padding: 20px;
+}
+
 #Lactose {
     font-weight: bold;
 }
