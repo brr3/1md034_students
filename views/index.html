@@ -5,6 +5,9 @@
         <meta charset="utf-8"/>
         <link rel="resetsheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/js_script.js" defer></script>
+        <script src="https://vuejs.org/js/vue.js" defer></script>
+        <script src="js/vue_script.js" defer></script>
     </head>
     <body>
         <main>
@@ -16,31 +19,14 @@
                 <h3>Select burger</h3>
                 <p>This is where you execute burger selection</p>
                 <div class="wrapper">
-                    <div class="box a">
-                        <h3>The Fire Burger</h3>
-                        <img src="https://www.colourbox.com/preview/4409422-hamburger-with-fire.jpg" width="300">
-                        <ul>
-                            <li>750 kCal</li>
-                            <li>Contains <span id="lactose">lactose</span></li>
-                            <li>Contains <span id="gluten">gluten</span></li>
-                        </ul>
+                    <div class="box a" id="burger1">
+
                     </div>
-                    <div class="box b">
-                        <h3>Fried Turkey Burger</h3>
-                        <img src="https://cdn0.wideopeneats.com/wp-content/uploads/2017/10/arbys-deep-fried-turkey-sandwiches.png" width="300">
-                        <ul>
-                            <li>600 kCal</li>
-                            <li>Contains <span id="lactose">lactose</span></li>
-                        </ul>
+                    <div class="box b" id="burger2">
+
                     </div>
-                    <div class="box c">
-                        <h3>A Double w/ Cheese</h3>
-                        <img src="https://www.mcdonalds.com.my/storage/foods/September2017/thumb2doublecheeseburger-efc3a63a9d.jpg" width="300">
-                        <ul>
-                            <li>1800 kCal</li>
-                            <li>Contains <span id="lactose">lactose</span></li>
-                            <li>Contains <span id="gluten">gluten</span></li>
-                        </ul>
+                    <div class="box c" id="burger3">
+
                     </div>
                 </div>
             </section>
@@ -93,7 +79,8 @@
                     </div>
                 </form>
             </section>
-            <br><button type="submit"><img src="./static/1md034/img/html/image_button.png">Place my order!</button>
+            <br>
+            <button type="submit"><img src="./static/1md034/img/html/image_button.png">Place my order!</button>
             <footer>
                 <hr>
                 <p>&copy; Hypothetical Burgers Inc.</p>
