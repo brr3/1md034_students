@@ -1,4 +1,4 @@
-class MenuItem {
+/*class MenuItem {
 		constructor(name, imageURL, kCal, ...intolerences) {
     		this.productName = name;
 			this.imageURL = imageURL;
@@ -62,4 +62,4 @@ for (i; i < 3; i++) {
 	burgers[i].appendChild(title);
     burgers[i].appendChild(image);
 	burgers[i].appendChild(uList);
-}
+}*/
