@@ -1,3 +1,4 @@
+
 var menuItems = [
     {
         "name": "The Fire Burger",

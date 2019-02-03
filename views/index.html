@@ -19,15 +19,16 @@
             <section class="selection">
                 <h3>Select burger</h3>
                 <p>This is where you execute burger selection</p>
-                <div class="wrapper" id="menu">
-                    <div v-for="item in menuItems" v-bind:class="item.name">
-                       <h3>{{ item.name }}</h3>
-                       <img v-bind:src="item.image" width="300">
-                       <ul>
-                           <li>{{ item.kCal + " kCal" }}</li>
-                           <li v-for="intolerence in item.intolerences">Contains <span v-bind:id="intolerence">{{ intolerence }}</span></li>
-                       </ul>
-                   </div>
+                <div class="wrapper">
+                    <div class="box a" id="burger1">
+
+                    </div>
+                    <div class="box b" id="burger2">
+
+                    </div>
+                    <div class="box c" id="burger3">
+
+                    </div>
                 </div>
             </section>
             <section class="contact">
