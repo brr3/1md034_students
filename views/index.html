@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="resetsheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/menu.js"></script>
         <script src="js/js_script.js" defer></script>
         <script src="https://vuejs.org/js/vue.js" defer></script>
         <script src="js/vue_script.js" defer></script>
@@ -23,8 +24,8 @@
                        <h3>{{ item.name }}</h3>
                        <img v-bind:src="item.image" width="300">
                        <ul>
-                           <li>{{ item.calories + " kCal" }}</li>
-                           <li v-for="intolerence in item.contents">Contains <span v-bind:id="intolerence">{{ intolerence }}</span></li>
+                           <li>{{ item.kCal + " kCal" }}</li>
+                           <li v-for="intolerence in item.intolerences">Contains <span v-bind:id="intolerence">{{ intolerence }}</span></li>
                        </ul>
                    </div>
                 </div>
