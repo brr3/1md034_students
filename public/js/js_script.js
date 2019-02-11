@@ -1,4 +1,6 @@
 
+'use strict';
+
 var burgers = [document.getElementById("burger1"), document.getElementById("burger2"), document.getElementById("burger3")];
 
 // Create the menu
@@ -75,10 +77,10 @@ function summarizeOrder() {
 	orderSummary.push(inputValue);
 	inputValue = document.getElementById('email').value;
 	orderSummary.push(inputValue);
-	inputValue = document.getElementById('street').value;
+	/*inputValue = document.getElementById('street').value;
 	orderSummary.push(inputValue);
 	inputValue = document.getElementById('housenr').value;
-	orderSummary.push(inputValue);
+	orderSummary.push(inputValue);*/
 	inputValue = document.getElementById('payment').value;
 	orderSummary.push(inputValue);
 	let inputGender = document.getElementsByName('gender');
@@ -93,13 +95,12 @@ function summarizeOrder() {
 	length = selectedBurger.length;
 	for (let i = 0; i < length; i++) {
         if (selectedBurger[i].checked) {
-			orderSummary.push(selectedBurger[i].id);
+			orderSummary.push(" " + selectedBurger[i].id);
         }
     }
-	console.log(orderSummary);
 }
 
-function displayOrder() {
+function displayOrderSummary() {
 	let orderSummaryDiv = document.getElementById("orderSummary");
 
 	let title = document.createElement("h3");
@@ -124,7 +125,7 @@ function displayOrder() {
 	uListItem2.appendChild(uListValue2);
 	uList.appendChild(uListItem2);
 
-	let uListItem3 = document.createElement("li");
+	/*let uListItem3 = document.createElement("li");
 	let uListValue3 = document.createTextNode("Street name: " + orderSummary[2]);
 	uListItem3.appendChild(uListValue3);
 	uList.appendChild(uListItem3);
@@ -132,22 +133,22 @@ function displayOrder() {
 	let uListItem4 = document.createElement("li");
 	let uListValue4 = document.createTextNode("House number: " + orderSummary[3]);
 	uListItem4.appendChild(uListValue4);
-	uList.appendChild(uListItem4);
+	uList.appendChild(uListItem4);*/
 
 	let uListItem5 = document.createElement("li");
-	let uListValue5 = document.createTextNode("Payment option: " + orderSummary[4]);
+	let uListValue5 = document.createTextNode("Payment option: " + orderSummary[2]);
 	uListItem5.appendChild(uListValue5);
 	uList.appendChild(uListItem5);
 
 	let uListItem6 = document.createElement("li");
-	let uListValue6 = document.createTextNode("Gender: " + orderSummary[5]);
+	let uListValue6 = document.createTextNode("Gender: " + orderSummary[3]);
 	uListItem6.appendChild(uListValue6);
 	uList.appendChild(uListItem6);
 
 	orderSummaryDiv.appendChild(uList);
 
 	let subtitle2 = document.createElement("h4");
-	let subtitleValue2 = document.createTextNode("Ordered burger(s): " + orderSummary.slice(6));
+	let subtitleValue2 = document.createTextNode("Ordered burger(s): " + orderSummary.slice(4));
 	subtitle2.appendChild(subtitleValue2);
 	orderSummaryDiv.appendChild(subtitle2);
 }
